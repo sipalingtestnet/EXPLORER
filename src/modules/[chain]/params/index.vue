@@ -26,9 +26,9 @@ onMounted(() => {
           <div class="text-xs mb-2 text-secondary">{{ item.subtitle }}</div>
           <div class="text-base text-main">{{ item.value }}</div>
         </div>
-
+      </div>
     </div>
-    <!-- minting Parameters  --
+    <!-- minting Parameters  -->
     <CardParameter :cardItem="store.mint" />
     <!-- Staking Parameters  -->
     <CardParameter :cardItem="store.staking" />
@@ -38,7 +38,8 @@ onMounted(() => {
     <CardParameter :cardItem="store.distribution" />
     <!-- Slashing Parameters -->
     <CardParameter :cardItem="store.slashing" />
-    
+    <!-- Application Version -->
+
 
     <!-- Node Information -->
  
