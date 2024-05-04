@@ -26,6 +26,7 @@ onMounted(() => {
           <div class="text-xs mb-2 text-secondary">{{ item.subtitle }}</div>
           <div class="text-base text-main">{{ item.value }}</div>
         </div>
+            </div>
       </div>
     </div>
     <!-- minting Parameters  -->
