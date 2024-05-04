@@ -2,22 +2,22 @@
     "chain_name": "galactica",
     "registry_name": "galactica",
     "api": [
-        {"provider": "CryptoNodeID", "address": "https://zealy-webapp-images-prod.s3.eu-west-1.amazonaws.com/public/beaca3cb-15c3-4e3a-9390-d6111cee83d2-DiscordProfileimage.png"}
+        {"provider": "SIPALING-TESTNET", "address": "https://api.galactica.sipalingtestnet.com"}
     ],
     "rpc": [
-        {"provider": "CryptoNodeID", "address": "https://zealy-webapp-images-prod.s3.eu-west-1.amazonaws.com/public/beaca3cb-15c3-4e3a-9390-d6111cee83d2-DiscordProfileimage.png"}
+        {"provider": "SIPALING-TESTNET", "address": "https://api.galactica.sipalingtestnet.com"}
     ],
     "sdk_version": "0.47.6",
     "keplr_features": ["eth-address-gen", "eth-key-sign"],
     "coin_type": "60",
     "min_tx_fee": "10000000000000000",
     "addr_prefix": "gala",
-    "logo": "/logos/galactica.png",
+    "logo": "https://zealy-webapp-images-prod.s3.eu-west-1.amazonaws.com/public/beaca3cb-15c3-4e3a-9390-d6111cee83d2-DiscordProfileimage.png",
     "assets": [{
         "base": "agnet",
         "symbol": "GNET",
         "exponent": "18",
         "coingecko_id": "", 
-        "logo": "/logos/galactica.png"
+        "logo": "https://zealy-webapp-images-prod.s3.eu-west-1.amazonaws.com/public/beaca3cb-15c3-4e3a-9390-d6111cee83d2-DiscordProfileimage.png"
     }]
 }
