@@ -150,29 +150,30 @@ export const useIndexModule = defineStore('module-index', {
 
       return [
         {
-          title: 'Latest Block',
+          title: 'Height',
           color: 'primary',
+          icon: 'mdi-pound',
           stats: String(base?.latest?.block?.header?.height || 0),
           change: 0,
         },
         {
           title: 'Validators',
           color: 'error',
-        
+          icon: 'mdi-human-queue',
           stats: String(base?.latest?.block?.last_commit?.signatures.length || 0),
           change: 0,
         },
         {
           title: 'Supply',
           color: 'success',
-     
+          icon: 'mdi-currency-usd',
           stats: formatter.formatTokenAmount(bank.supply),
           change: 0,
         },
         {
           title: 'Bonded Tokens',
           color: 'warning',
-        
+          icon: 'mdi-lock',
           stats: formatter.formatTokenAmount({
             // @ts-ignore
             amount: this.pool.bonded_tokens,
@@ -183,14 +184,14 @@ export const useIndexModule = defineStore('module-index', {
         {
           title: 'Inflation',
           color: 'success',
-   
+          icon: 'mdi-chart-multiple',
           stats: formatter.formatDecimalToPercent(mintStore.inflation),
           change: 0,
         },
         {
           title: 'Community Pool',
           color: 'primary',
-        
+          icon: 'mdi-bank',
           stats: formatter.formatTokens(
             // @ts-ignore
             this.communityPool?.filter(
