@@ -152,13 +152,13 @@ function fetchAllKeyRotation() {
     <div class="tabs tabs-boxed bg-transparent mb-4">
       <a
         class="tab text-gray-600 capitalize"
-        :class="{ 'bg-[#ffea6e]': tab === '3' }"
+        :class="{ 'bg-[#f7921e]': tab === '3' }"
         @click="changeTab('3')"
         >{{ $t('uptime.overall') }}</a
       >
       <a
         class="tab text-gray-600 capitalize"
-        :class="{ 'bg-[#ffea6e]': tab === '2' }"
+        :class="{ 'bg-[#f7921e]': tab === '2' }"
         @click="changeTab('2')"
         >{{ $t('module.blocks') }}</a
       >
@@ -174,7 +174,7 @@ function fetchAllKeyRotation() {
           placeholder="Keywords to filter validators"
           class="input input-sm w-full flex-1 border border-gray-200 dark:border-gray-600 dark:bg-[#303030]"
         />
-        <button v-if="chainStore.isConsumerChain" class="inline-flex items-center justify-center flex-wrap cursor-pointer select-none text-center transition duration-200 rounded-lg btn-sm bg-[#ffea6e] text-black hover:bg-[#ffffff] dark:hover:bg-[#202020] dark:hover:text-white hover:shadow-[0_0_10px_3px_rgba(255,234,110,1)] mt-1" @click="fetchAllKeyRotation">Load Rotated Keys</button>
+        <button v-if="chainStore.isConsumerChain" class="inline-flex items-center justify-center flex-wrap cursor-pointer select-none text-center transition duration-200 rounded-lg btn-sm bg-[#f7921e] text-black hover:bg-[#ffffff] dark:hover:bg-[#202020] dark:hover:text-white hover:shadow-[0_0_10px_3px_rgba(255,234,110,1)] mt-1" @click="fetchAllKeyRotation">Load Rotated Keys</button>
       </div>
 
       <div v-if="chainStore.isConsumerChain && Object.keys(stakingStore.keyRotation).length === 0"

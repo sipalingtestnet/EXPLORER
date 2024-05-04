@@ -32,9 +32,9 @@ function myContracts() {
     <div class="bg-[#ffffff] dark:bg-[#222222] px-4 pt-3 pb-4 rounded mb-4 shadow">
         <h2 class="card-title truncate w-full">{{ $t('cosmwasm.title') }}</h2>
 
-        <div class="join border border-[#ffea6e]">
+        <div class="join border border-[#f7921e]">
             <input v-model="creator" type=text class="input input-bordered dark:bg-[#303030] w-40 join-item" placeholder="creator address" />
-            <button class="join-item join-item inline-flex items-center justify-center flex-wrap cursor-pointer select-none text-center transition duration-200 bg-[#ffea6e] text-black hover:bg-[#ffffff] dark:hover:bg-[#202020] dark:hover:text-white hover:shadow-[0_0_10px_3px_rgba(255,234,110,1)] uppercase font-bold px-4" @click="myContracts()">{{ $t('cosmwasm.btn_query') }}</button>
+            <button class="join-item join-item inline-flex items-center justify-center flex-wrap cursor-pointer select-none text-center transition duration-200 bg-[#f7921e] text-black hover:bg-[#ffffff] dark:hover:bg-[#202020] dark:hover:text-white hover:shadow-[0_0_10px_3px_rgba(255,234,110,1)] uppercase font-bold px-4" @click="myContracts()">{{ $t('cosmwasm.btn_query') }}</button>
         </div>
         <div class="overflow-x-auto">
             <table class="table table-compact w-full mt-4 text-sm">
@@ -51,7 +51,7 @@ function myContracts() {
                         <td>{{ v.code_id }}</td>
                         <td>
                             <RouterLink :to="`/${props.chain}/cosmwasm/${v.code_id}/contracts`"
-                                class="truncate max-w-[200px] block text-[#ffea6e] dark:invert" :title="v.data_hash">
+                                class="truncate max-w-[200px] block text-[#f7921e] dark:invert" :title="v.data_hash">
                                 {{ v.data_hash }}
                             </RouterLink>
                         </td>
@@ -66,7 +66,7 @@ function myContracts() {
             </table>
             <div class="flex justify-between">
                 <PaginationBar :limit="pageRequest.limit" :total="codes.pagination?.total" :callback="pageload" />
-                <label for="wasm_store_code" class="inline-flex items-center justify-center flex-wrap cursor-pointer select-none text-center transition duration-200 rounded-lg btn-sm bg-[#ffea6e] text-black hover:bg-[#ffffff] dark:hover:bg-[#202020] dark:hover:text-white hover:shadow-[0_0_10px_3px_rgba(255,234,110,1)] font-bold uppercase px-4  my-6 mr-7" @click="dialog.open('wasm_store_code', {})">{{ $t('cosmwasm.btn_up_sc') }}</label>
+                <label for="wasm_store_code" class="inline-flex items-center justify-center flex-wrap cursor-pointer select-none text-center transition duration-200 rounded-lg btn-sm bg-[#f7921e] text-black hover:bg-[#ffffff] dark:hover:bg-[#202020] dark:hover:text-white hover:shadow-[0_0_10px_3px_rgba(255,234,110,1)] font-bold uppercase px-4  my-6 mr-7" @click="dialog.open('wasm_store_code', {})">{{ $t('cosmwasm.btn_up_sc') }}</label>
             </div>
         </div>
     </div>

@@ -173,14 +173,14 @@ function color(v: string) {
             </td>
             <td class=" capitalize">{{ v.sigingInfo?.tombstoned }}</td>
             <td><span v-if="v.sigingInfo" class="badge " :class="color( v.sigingInfo?.missed_blocks_counter)">{{ v.sigingInfo?.missed_blocks_counter }}</span></td>
-            <td class=""><RouterLink :to="`/${v.chainName}/uptime/#blocks`" class="inline-flex items-center justify-center flex-wrap cursor-pointer select-none text-center transition duration-200 bg-[#ffea6e] text-black hover:bg-[#ffffff] dark:hover:bg-[#202020] dark:hover:text-white hover:shadow-[0_0_10px_3px_rgba(255,234,110,1)] font-semibold rounded-lg px-2 py-1">{{ $t('module.blocks') }}</RouterLink></td>
+            <td class=""><RouterLink :to="`/${v.chainName}/uptime/#blocks`" class="inline-flex items-center justify-center flex-wrap cursor-pointer select-none text-center transition duration-200 bg-[#f7921e] text-black hover:bg-[#ffffff] dark:hover:bg-[#202020] dark:hover:text-white hover:shadow-[0_0_10px_3px_rgba(255,234,110,1)] font-semibold rounded-lg px-2 py-1">{{ $t('module.blocks') }}</RouterLink></td>
           </tr>
         </tbody>
       </table>
     </div>
     
     <div class="text-center">
-      <label for="add-validator" class="inline-flex items-center justify-center flex-wrap cursor-pointer select-none text-center transition duration-200 bg-[#ffea6e] text-black hover:bg-[#ffffff] dark:hover:bg-[#202020] dark:hover:text-white hover:shadow-[0_0_10px_3px_rgba(255,234,110,1)] font-bold rounded-xl p-4 mt-5">{{ $t('uptime.add_validators') }}</label>
+      <label for="add-validator" class="inline-flex items-center justify-center flex-wrap cursor-pointer select-none text-center transition duration-200 bg-[#f7921e] text-black hover:bg-[#ffffff] dark:hover:bg-[#202020] dark:hover:text-white hover:shadow-[0_0_10px_3px_rgba(255,234,110,1)] font-bold rounded-xl p-4 mt-5">{{ $t('uptime.add_validators') }}</label>
     </div>
 
     <!-- Put this part before </body> tag -->
@@ -214,7 +214,7 @@ function color(v: string) {
           </table>
         </div>
         <div class="modal-action">
-          <label class="inline-flex items-center justify-center flex-wrap cursor-pointer select-none text-center transition duration-200 bg-[#ffea6e] text-black hover:bg-[#ffffff] dark:hover:bg-[#202020] dark:hover:text-white hover:shadow-[0_0_10px_3px_rgba(255,234,110,1)] font-bold rounded-xl p-4" @click="add">{{ $t('uptime.add') }}</label>
+          <label class="inline-flex items-center justify-center flex-wrap cursor-pointer select-none text-center transition duration-200 bg-[#f7921e] text-black hover:bg-[#ffffff] dark:hover:bg-[#202020] dark:hover:text-white hover:shadow-[0_0_10px_3px_rgba(255,234,110,1)] font-bold rounded-xl p-4" @click="add">{{ $t('uptime.add') }}</label>
         </div>
       </div>
     </div>

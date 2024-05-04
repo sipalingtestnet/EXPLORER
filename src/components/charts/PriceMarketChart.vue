@@ -36,14 +36,14 @@ function changeChart(type: string) {
     <div class="tabs tabs-boxed !bg-transparent justify-end">
         <a
             class="tab text-xs mr-2 text-gray-800 dark:text-gray-600 uppercase hover:bg-[#f3f4f6] dark:hover:bg-[#303030] "
-            :class="{ '!bg-[#ffea6e]': kind === 'price' }"
+            :class="{ '!bg-[#f7921e]': kind === 'price' }"
             @click="changeChart('price')"
         >
             Price
         </a>
         <a
             class="tab text-xs text-gray-800 dark:text-gray-600 uppercase hover:bg-[#f3f4f6] dark:hover:bg-[#303030] "
-            :class="{ '!bg-[#ffea6e]': kind === 'volume' }"
+            :class="{ '!bg-[#f7921e]': kind === 'volume' }"
             @click="changeChart('volume')"
         >
             Volume
@@ -60,6 +60,6 @@ function changeChart(type: string) {
 <style>
 
 .tab-active {
-    background-color: #ffea6e;
+    background-color: #f7921e;
 }
 </style>

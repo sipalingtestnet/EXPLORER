@@ -64,7 +64,7 @@ onBeforeRouteUpdate(async (to, from, next) => {
   <div>
     <div v-if="isFutureBlock" class="text-center">
       <div v-if="remainingBlocks > 0">
-        <div class="text-black dark:text-[#ffea6e] font-bold text-lg my-10">#{{ target }}</div>
+        <div class="text-black dark:text-[#f7921e] font-bold text-lg my-10">#{{ target }}</div>
         <Countdown :time="estimateTime" css="md:!text-5xl font-sans md:mx-5" />
         <div class="my-5">{{ $t('block.estimated_time') }}: <span class="text-xl font-bold">{{ format.toLocaleDate(estimateDate) }}</span>
         </div>
@@ -81,7 +81,7 @@ onBeforeRouteUpdate(async (to, from, next) => {
                   <p class="py-4">
                   <div class="join">
                     <input class="input input-bordered join-item" v-model="newHeight" type="number" />
-                    <button class="px-2 font-bold bg-[#ffea6e] text-black hover:bg-[#ffffff] dark:hover:bg-[#202020] dark:hover:text-white hover:shadow-[0_0_10px_3px_rgba(255,234,110,1)] uppercase join-item" @click="updateTarget()">{{ $t('block.btn_update') }}</button>
+                    <button class="px-2 font-bold bg-[#f7921e] text-black hover:bg-[#ffffff] dark:hover:bg-[#202020] dark:hover:text-white hover:shadow-[0_0_10px_3px_rgba(255,234,110,1)] uppercase join-item" @click="updateTarget()">{{ $t('block.btn_update') }}</button>
                   </div>
                   </p>
                 </td>
@@ -110,11 +110,11 @@ onBeforeRouteUpdate(async (to, from, next) => {
           <p class="">#{{ current.block?.header?.height }}</p>
           <div class="flex" v-if="props.height">
             <RouterLink :to="`/${store.blockchain.chainName}/block/${height - 1}`"
-              class="btn bg-[#ffea6e] text-black hover:bg-[#ffffff] dark:hover:bg-[#202020] dark:hover:text-white hover:shadow-[0_0_10px_3px_rgba(255,234,110,1)] btn-sm p-1 text-2xl mr-2">
+              class="btn bg-[#f7921e] text-black hover:bg-[#ffffff] dark:hover:bg-[#202020] dark:hover:text-white hover:shadow-[0_0_10px_3px_rgba(255,234,110,1)] btn-sm p-1 text-2xl mr-2">
               <Icon icon="mdi-arrow-left" class="w-full h-full" />
             </RouterLink>
             <RouterLink :to="`/${store.blockchain.chainName}/block/${height + 1}`"
-              class="btn bg-[#ffea6e] text-black hover:bg-[#ffffff] dark:hover:bg-[#202020] dark:hover:text-white hover:shadow-[0_0_10px_3px_rgba(255,234,110,1)] btn-sm p-1 text-2xl">
+              class="btn bg-[#f7921e] text-black hover:bg-[#ffffff] dark:hover:bg-[#202020] dark:hover:text-white hover:shadow-[0_0_10px_3px_rgba(255,234,110,1)] btn-sm p-1 text-2xl">
               <Icon icon="mdi-arrow-right" class="w-full h-full" />
             </RouterLink>
           </div>

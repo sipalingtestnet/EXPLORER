@@ -112,7 +112,7 @@ const isConvertable = computed(() => {
     margin-bottom: 1rem;
   }
   a {
-      color: #ffea6e !important;
+      color: #f7921e !important;
   }
   .h1 > a, .h2> a, .h3> a, .h4> a, .h5> a, .h6> a, h1> a, h2> a, h3> a, h4> a, h5> a, h6> a { 
     color: inherit !important;

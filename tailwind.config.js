@@ -5,14 +5,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        yes: '#3fb68b',
+        yes: '#f9be70',
         no: '#ff5353',
-        info: '#00b2ff',
+        info: '#ed6911',
         main: 'var(--text-main)',
         secondary: 'var(--text-secondary)',
         active: 'var(--bg-active)',
         invert: 'var(--text-invert)',
-        whisper: '#ffea6e',
+        whisper: '#f7921e',
       }
     },
   },
@@ -22,16 +22,16 @@ module.exports = {
       {
         light: {
           ...require('daisyui/src/theming/themes')['[data-theme=light]'],
-          primary: '#ffea6e',
+          primary: '#f7921e',
         },
       },
       {
         dark: {
           ...require('daisyui/src/theming/themes')['[data-theme=dark]'],
-          primary: '#ffea6e',
+          primary: '#f7921e',
           inverted: '#ffffff',
           'base-100': '#222222',
-          'base-200': '#303030',
+          'base-200': '#ffffff',
         },
       },
     ],

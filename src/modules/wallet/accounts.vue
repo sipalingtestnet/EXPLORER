@@ -225,7 +225,7 @@ async function loadBalances(chainName: string, endpoint: string, address: string
       <div v-for="{ key, subaccounts } in accounts" class="bg-[#222222] rounded-md my-5 py-5">
         <div class="flex justify-self-center">
           <div class="mx-2 p-2">
-            <svg :fill="chainStore.current?.themeColor || '#ffea6e'" height="28px" width="28px" version="1.1" id="Capa_1"
+            <svg :fill="chainStore.current?.themeColor || '#f7921e'" height="28px" width="28px" version="1.1" id="Capa_1"
               xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 487.5 487.5"
               xml:space="preserve">
               <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -361,7 +361,7 @@ async function loadBalances(chainName: string, endpoint: string, address: string
           </table>
         </div>
         <div class="modal-action mt-2 mb-0">
-          <a href="#" class="btn bg-[#ffea6e] text-black hover:bg-[#ffffff] dark:hover:bg-[#202020] dark:hover:text-white hover:shadow-[0_0_10px_3px_rgba(255,234,110,1)] btn-sm" @click="importStep = 'step1'">Close</a>
+          <a href="#" class="btn bg-[#f7921e] text-black hover:bg-[#ffffff] dark:hover:bg-[#202020] dark:hover:text-white hover:shadow-[0_0_10px_3px_rgba(255,234,110,1)] btn-sm" @click="importStep = 'step1'">Close</a>
         </div>
       </div>
     </div>

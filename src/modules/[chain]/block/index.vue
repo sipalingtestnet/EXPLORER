@@ -18,12 +18,12 @@ const list = computed(() => {
 <template>
     <div>
         <div class="tabs tabs-boxed bg-transparent mb-4">
-            <a class="tab text-gray-600 uppercase" :class="{ 'bg-[#ffea6e]': tab === 'blocks' }"
+            <a class="tab text-gray-600 uppercase" :class="{ 'bg-[#f7921e]': tab === 'blocks' }"
                 @click="tab = 'blocks'">{{ $t('block.recent') }}</a>
             <RouterLink class="tab text-gray-600 uppercase" 
                 :to="`/${chain}/block/${Number(base.latest?.block?.header.height||0) + 10000}`"
                 >{{ $t('block.future') }}</RouterLink>
-            <a class="tab text-gray-600 uppercase" :class="{ 'bg-[#ffea6e]': tab === 'transactions' }"
+            <a class="tab text-gray-600 uppercase" :class="{ 'bg-[#f7921e]': tab === 'transactions' }"
                 @click="tab = 'transactions'">{{ $t('account.transactions') }}</a>
         </div>
 
@@ -64,7 +64,7 @@ const list = computed(() => {
                         <td class="text-sm text-primary">
                             <RouterLink :to="`/${props.chain}/block/${item.height}`">{{ item.height }}</RouterLink>
                         </td>
-                        <td class="truncate text-gray-700 dark:text-[#ffea6e]" width="50%">
+                        <td class="truncate text-gray-700 dark:text-[#f7921e]" width="50%">
                             <RouterLink :to="`/${props.chain}/tx/${item.hash}`">{{
                                 item.hash
                             }}</RouterLink>

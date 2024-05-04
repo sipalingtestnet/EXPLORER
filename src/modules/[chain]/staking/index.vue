@@ -241,7 +241,7 @@ loadAvatars();
             <span>
                 <div class="relative w-9 h-9 rounded overflow-hidden flex items-center justify-center mr-2">
                     <Icon class="text-primary" icon="mdi:lock-open-outline" size="32" />
-                    <div class="absolute top-0 left-0 bottom-0 right-0 opacity-20 bg-[#ffea6e]"></div>
+                    <div class="absolute top-0 left-0 bottom-0 right-0 opacity-20 bg-[#f7921e]"></div>
                 </div>
             </span>
             <span>
@@ -280,19 +280,19 @@ loadAvatars();
             <div class="tabs tabs-boxed bg-transparent">
                 <a
                     class="tab text-gray-600"
-                    :class="{ 'bg-[#ffea6e]': tab === 'featured' }"
+                    :class="{ 'bg-[#f7921e]': tab === 'featured' }"
                     @click="tab = 'featured'"
                     >{{ $t('staking.popular') }}</a
                 >
                 <a
                     class="tab text-gray-600"
-                    :class="{ 'bg-[#ffea6e]': tab === 'active' }"
+                    :class="{ 'bg-[#f7921e]': tab === 'active' }"
                     @click="tab = 'active'"
                     >{{ $t('staking.active') }}</a
                 >
                 <a
                     class="tab text-gray-600"
-                    :class="{ 'bg-[#ffea6e]': tab === 'inactive' }"
+                    :class="{ 'bg-[#f7921e]': tab === 'inactive' }"
                     @click="tab = 'inactive'"
                     >{{ $t('staking.inactive') }}</a
                 >
@@ -375,7 +375,7 @@ loadAvatars();
                                     </div>
 
                                     <div class="flex flex-col">
-                                        <span class="text-base font-bold text-[#ffea6e] whitespace-nowrap overflow-hidden">
+                                        <span class="text-base font-bold text-[#f7921e] whitespace-nowrap overflow-hidden">
                                             <RouterLink
                                                 :to="{
                                                     name: 'chain-staking-validator',
@@ -450,7 +450,7 @@ loadAvatars();
                                 <label
                                     v-else
                                     for="delegate"
-                                    class="inline-flex items-center justify-center flex-wrap cursor-pointer select-none text-center transition duration-200 btn-xs font-semibold bg-[#ffea6e] text-black hover:bg-[#ffffff] dark:hover:bg-[#202020] dark:hover:text-white hover:shadow-[0_0_10px_3px_rgba(255,234,110,1)] rounded-lg capitalize"
+                                    class="inline-flex items-center justify-center flex-wrap cursor-pointer select-none text-center transition duration-200 btn-xs font-semibold bg-[#f7921e] text-black hover:bg-[#ffffff] dark:hover:bg-[#202020] dark:hover:text-white hover:shadow-[0_0_10px_3px_rgba(255,234,110,1)] rounded-lg capitalize"
                                     @click="
                                         dialog.open('delegate', {
                                             validator_address:

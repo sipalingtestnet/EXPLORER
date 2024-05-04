@@ -136,7 +136,7 @@ function selected(route: any, nav: NavLink) {
                 @click="sidebarShow = false"
                 class="hover:bg-[#f3f4f6] dark:hover:bg-[#303030]   rounded cursor-pointer px-3 py-2 flex items-center"
                 :class="{
-                  '!bg-[#ffea6e]': selected($route, el),
+                  '!bg-[#f7921e]': selected($route, el),
                 }"
                 :to="el.to"
               >

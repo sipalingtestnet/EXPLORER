@@ -143,7 +143,7 @@ const amount = computed({
 
           <div class="my-4 flex flex-wrap items-center">
             <a v-for="(item, index) of comLinks" :key="index" :href="item.href"
-              class="link link-primary px-2 py-1 rounded-sm no-underline hover:text-black hover:bg-[#ffea6e] flex items-center">
+              class="link link-primary px-2 py-1 rounded-sm no-underline hover:text-black hover:bg-[#f7921e] flex items-center">
               <Icon :icon="item?.icon" />
               <span class="ml-1 text-sm uppercase">{{ item?.name }}</span>
             </a>
@@ -202,7 +202,7 @@ const amount = computed({
             </div>
 
             <div class="flex">
-              <label class="inline-flex items-center justify-center flex-wrap cursor-pointer select-none text-center transition duration-200 rounded-lg bg-[#ffea6e] text-black hover:bg-[#ffffff]  dark:hover:text-black hover:shadow-[0_0_10px_3px_rgba(255,234,110,1)] !px-1 my-5 mr-2" for="calculator">
+              <label class="inline-flex items-center justify-center flex-wrap cursor-pointer select-none text-center transition duration-200 rounded-lg bg-[#f7921e] text-black hover:bg-[#ffffff]  dark:hover:text-black hover:shadow-[0_0_10px_3px_rgba(255,234,110,1)] !px-1 my-5 mr-2" for="calculator">
                 <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <rect x="4" y="2" width="16" height="20" rx="2"></rect> <line x1="8" x2="16" y1="6" y2="6"></line> <line x1="16" x2="16" y1="14" y2="18"></line> <path d="M16 10h.01"></path> <path d="M12 10h.01"></path> <path d="M8 10h.01"></path> <path d="M12 14h.01"></path> <path d="M8 14h.01"></path> <path d="M12 18h.01"></path> <path d="M8 18h.01"></path> </g></svg>
               </label>
               <!-- Put this part before </body> tag -->
@@ -370,7 +370,7 @@ const amount = computed({
       </div>
 
       <div class="grid grid-cols-3 gap-4 px-4 pb-6 mt-4">
-        <label for="PingTokenConvert" class="pt-2 pb-2 font-semibold inline-flex items-center justify-center flex-wrap cursor-pointer select-none text-center transition duration-200 rounded-lg uppercase bg-[#ffea6e] text-black hover:bg-[#ffffff] dark:hover:bg-[#202020] dark:hover:text-white hover:shadow-[0_0_10px_3px_rgba(255,234,110,1)]">{{ $t('index.btn_swap') }}</label>
+        <label for="PingTokenConvert" class="pt-2 pb-2 font-semibold inline-flex items-center justify-center flex-wrap cursor-pointer select-none text-center transition duration-200 rounded-lg uppercase bg-[#f7921e] text-black hover:bg-[#ffffff] dark:hover:bg-[#202020] dark:hover:text-white hover:shadow-[0_0_10px_3px_rgba(255,234,110,1)]">{{ $t('index.btn_swap') }}</label>
         <label for="send" class="pt-2 pb-2 font-semibold inline-flex items-center justify-center flex-wrap cursor-pointer select-none text-center transition duration-200 rounded-lg uppercase bg-yes !border-yes text-black hover:bg-[#ffffff] dark:hover:bg-[#202020] hover:text-black dark:hover:text-white hover:shadow-[0_0_10px_3px_rgba(63,182,139,1)]" @click="dialog.open('send', {}, updateState)">{{ $t('account.btn_send') }}</label>
         <label for="delegate" class="pt-2 pb-2 font-semibold inline-flex items-center justify-center flex-wrap cursor-pointer select-none text-center transition duration-200 rounded-lg uppercase bg-info !border-info text-black hover:bg-[#ffffff] dark:hover:bg-[#202020] hover:text-black dark:hover:text-white hover:shadow-[0_0_10px_3px_rgba(0,178,255,1)] "
           @click="dialog.open('delegate', {}, updateState)">{{ $t('account.btn_delegate') }}</label>
