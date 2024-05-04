@@ -244,6 +244,8 @@ const amount = computed({
           <PriceMarketChart />
         </div>
       </div>
+
+      
       <div class="h-[1px] w-full bg-[#f3f4f6] dark:bg-[#303030]"></div>
       <div class="max-h-[250px] overflow-auto p-4 text-sm">
         <MdEditor :model-value="coinInfo.description?.en" previewOnly></MdEditor>
@@ -256,23 +258,13 @@ const amount = computed({
       </div>
     </div>
 
-    <div class="grid grid-cols-1 gap-4 md:!grid-cols-3 lg:!grid-cols-6">
+    <div class="grid grid-cols-1 gap-4 md:!grid-cols-3 lg:!grid-cols-3">
       <div v-for="(item, key) in store.stats" :key="key">
         <CardStatisticsVertical v-bind="item" />
       </div>
     </div>
 
-    <div v-if="blockchain.supportModule('governance')" class="bg-[#ffffff] dark:bg-[#222222] rounded mt-4 shadow">
-      <div class="px-4 pt-4 pb-2 text-lg font-semibold text-main">
-        {{ $t('index.active_proposals') }}
-      </div>
-      <div class="px-4 pb-4">
-        <ProposalListItem :proposals="store?.proposals" />
-      </div>
-      <div class="pb-8 text-center" v-if="store.proposals?.proposals?.length === 0">
-        {{ $t('index.no_active_proposals') }}
-      </div>
-    </div>
+    
 
     <div class="bg-[#ffffff] dark:bg-[#222222] rounded mt-4 shadow">
       <div class="flex justify-between px-4 pt-4 pb-2 text-lg font-semibold text-main">
@@ -382,22 +374,8 @@ const amount = computed({
       </Teleport>
     </div>
 
-    <div class="bg-[#ffffff] dark:bg-[#222222] rounded mt-4">
-      <div class="px-4 pt-4 pb-2 text-lg font-semibold text-main">
-        {{ $t('index.app_versions') }}
-      </div>
-      <!-- Application Version -->
-      <ArrayObjectElement :value="paramStore.appVersion?.items" :thead="false" />
-      <div class="h-4"></div>
-    </div>
 
-    <div v-if="!store.coingeckoId" class="bg-[#ffffff] dark:bg-[#222222] rounded mt-4">
-      <div class="px-4 pt-4 pb-2 text-lg font-semibold text-main">
-        {{ $t('index.node_info') }}
-      </div>
-      <ArrayObjectElement :value="paramStore.nodeVersion?.items" :thead="false" />      
-      <div class="h-4"></div>
-    </div>
+    
   </div>
 </template>
 
